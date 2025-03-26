@@ -1,0 +1,431 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  cursor: url('images/cursor (сайт).webp') 4 4, auto;
+  scrollbar-color: #555 #111;
+  scrollbar-width: thin;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 520px;
+  margin-left: 130px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #ff5c00;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e04e00;
+}
+
+.section,
+.features,
+.formats,
+.pricing,
+.plans {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h2,
+.features h2,
+.formats h2,
+.pricing h2,
+.plans h2 {
+  font-size: 44px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+.section p {
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photo {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.feature-card,
+.format-card,
+.plan-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover,
+.format-card:hover,
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(200, 200, 200, 0.15);
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 20px;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(200, 200, 200, 0.05);
+}
+
+.feature-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.teacher-section {
+  position: relative;
+  background-image: url('images/Studio-photo-(photoshop-for-web).jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-top: 60px;
+}
+
+.teacher-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.teacher-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.teacher-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(200, 200, 200, 0.15);
+  object-fit: cover;
+}
+
+.teacher-content {
+  max-width: 600px;
+  color: #fff;
+  text-align: left;
+}
+
+.teacher-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.teacher-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.formats {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.formats h2 {
+  font-size: 44px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
+.formats-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.format-card {
+  background-color: #1c1c1c;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(200, 200, 200, 0.1);
+  width: 280px;
+  font-size: 18px;
+}
+
+.format-card h3 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.format-card p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.format-icon {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.plans {
+  margin-top: 60px;
+}
+
+.plans h2 {
+  margin-bottom: 40px;
+}
+
+.plan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.plan-card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(200, 200, 200, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-card h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #ff5c00;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.plan-card ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.plan-card ul li::before {
+  content: "✓";
+  color: #ff5c00;
+  position: absolute;
+  left: 0;
+}
+
+.plan-card .btn {
+  margin-top: auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #222;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.section-title-with-gif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.section-title-with-gif h2 {
+  margin: 0;
+}
+
+.about-gif {
+  width: 48px;
+  height: auto;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+
+  .teacher-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .teacher-photo {
+    width: 200px;
+  }
+
+  .teacher-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .feature-card,
+  .format-card,
+  .plan-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .features-grid,
+  .formats-grid,
+  .plan-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p,
+  .section p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .plan-card ul li {
+    font-size: 14px;
+  }
+
+  .feature-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
